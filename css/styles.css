@@ -1,6 +1,23 @@
+:root {
+    --navy-blue-color: #2E2F42;
+    --interactive-color: #434455;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
+    background-color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+}
+
+.btn {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .list 
@@ -13,36 +30,46 @@ body {
     text-decoration: none;
 }
 
+.secret-name
+{ 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    margin:-1px; 
+    padding: 0; 
+    overflow:hidden; 
+    border: 0; 
+    clip: rect(0 0 0 0); 
+} 
+
 .header .logo-studio {
-    color: #2E2F42;
+   color: var(--navy-blue-color); 
+} 
+
+.logo-text{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .logo-web {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: #4D5AE5;
 }
-.logo-studio {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+
+.footer .logo-studio {
     color: #F4F4FD;
 }
 
-/*.header {
+.header {
 }
 .header-nav {
 }
-*/
 
 .header-link {
+    color: var(--navy-blue-color);
 }
 
 .header-list { 
@@ -54,14 +81,27 @@ body {
 .address-list {
 }
 .address-item {
-}
+} 
+
 .address-mail, .address-tel {
-    color: #434455;
+    color: var(--interactive-color);
 }
 .address-mail:hover, .address-mail:focus, 
 .address-tel:hover, .address-tel:focus {
     color: #4D5AE5;
 }
+
+.headline {
+    font-size: 20px;
+    line-height: 1.2;    
+    color: #2E2F42;
+}
+
+.text {
+}
+
+/*----------------------------------------Hero Portfolio--------------------------------------*/
+
 .hero {
 }
 .hero-title {
@@ -70,14 +110,9 @@ body {
 }
 .hero-item {
 }
-.hero-btn {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
-    width: 126px;
-    height: 48px;
+.hero-btn {    
+    color: #4D5AE5;
+    padding: 12px 24px;
     background: #F4F4FD;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
@@ -89,20 +124,42 @@ body {
     color: #FFFFFF;
     cursor: pointer;
 }
-
-.hero-headline {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2E2F42;
+.hero-link {
+    color: var(--interactive-color);
 }
 
-.hero-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+/*------------------------------Index Studio-----------------------------------------*/ 
+
+.solutions-section {
+    background: #2E2F42;
 }
+
+.solutions-section-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.solutions-section-btn {
+    background: #4D5AE5;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}  
+
+.heading{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--navy-blue-color);
+}
+
+/*-------------------------------Footer----------------------------------------------*/
 
 .footer {
     background: #2E2F42;
@@ -112,8 +169,5 @@ body {
 }
 
 .footer-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     color: #E7E9FC;
 }
